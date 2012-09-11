@@ -1,0 +1,188 @@
+1   CSS Grundlagen
+
+1.1   Was ist CSS ?
+
+	CSS steht für Cascading Style Sheets
+	Es handelt sich um eine deklarative Sprache
+	Dient als Stilvorlage für strukturierte Dokumente (meist HTML)
+
+1.2   Wie ist CSS aufgebaut?
+
+	Selektoren und dazugehörige Regelgruppen
+
+	Selektor {
+		Regel 1;
+		Regel 2;
+		Regel 3;
+	}
+
+1.2.1   Selektor
+
+	Gibt an auf welche Elemente die Regelgruppe wirkt
+
+1.2.2   Regeln
+
+	Die Regelgruppe besteht aus mindestens einer Regel
+
+	Eine Regel besteht aus einer Eigenschaft und dem zugewiesenen Wert
+
+1.2.2.1   Eigenschaft
+
+	Welche Eigenschaft soll geändert werden?
+
+	Kleinbuchstaben, mit Bindestrichen getrennt
+
+1.2.2.2   Wert
+
+	Je nach Eigenschaft sind unterschiedliche Wertetypen möglich
+
+1.2.2.2.1   Zahlen
+
+	Ganz- oder Kommazahlen (englische Schreibweise)
+
+1.2.2.2.2   Längenangaben
+
+	Relative Längen: em, ex
+
+	Absolute Längen: in, cm, mm, pt, pc, px
+
+1.2.2.2.3   Prozentangaben
+
+	Relativ zum Vaterelement
+
+1.2.2.2.4   URLs und URIs
+1.2.2.2.5   Zähler
+1.2.2.2.6   Farben
+1.2.2.2.7   Strings
+
+
+
+1.2.2.3   Kompate Eigenschaften
+
+	Abkürzungen welche mehrere Eigenschaften in einer Zuweisung vereinen
+
+	border-top-width: 1px;
+	border-right: 2px;
+	border-bottom: 3px;
+	border-left: 4px;
+
+	kann so geschrieben werden:
+
+	border: 1px 2px 3px 4px;
+
+1.2.3   Selektorverkettung
+
+	Mehrere Selektoren greifen auf den gleichen Regelblock zu
+
+	Verkettung mit Kommatas
+
+	div, p { line-height: 20px; }
+
+1.2.3   Kommentare
+
+	/*
+	Dies ist
+	ein mehrzeiliger
+	Kommentar
+	*/
+
+1.3   Selektorregeln
+1.3.1   Universal
+
+	* { ... }
+
+1.3.2   Typ
+
+	<a href="...">...</a> <----------
+	<span>...</span>
+
+	a { ... }
+
+1.3.3   Klasse
+
+	<div class="important">...</div> <----------
+	<div class="unimportant">...</div>
+
+	.important { ... }
+
+1.3.4   ID
+
+	<div id="main">...</div> <----------
+	<div id="sub">...</div>
+
+	#main { ... }
+
+1.3.5   Nachkomme
+
+	<ul>
+		<li><a href="...">...</a></li> <----------
+	</ul>
+	<a href="...">...</a>
+
+	ul a { ... }
+
+1.3.6   Kind
+
+	<h2>
+		<span>...</span> <----------
+		<div>
+			<span>...</span>
+		</div>
+	</h2>
+
+	h2 > span { ... }
+
+1.3.7   Angrenzende Geschwister
+
+	<h2>...</h2>
+	<h3>...</h3> <----------
+	<h3>...</h3>
+
+	h2 + h3 { ... }
+
+1.3.8   Attribute
+
+	<a name="anchor_1">...</a>
+	<div>
+		<a href="...">...</a>
+	</div>
+
+	a[name] { ... }
+
+1.3.9   Pseudoklassen
+1.3.10  Pseudoelemente
+
+3   CSS Vererbung
+3.1   Was wird vererbt?
+3.2   Was wird nicht vererbt?
+3.3   Was ist mit der Schriftgröße?
+
+4   CSS Kaskadierung
+4.1   Was ist damit gemeint?
+4.2   Arten von Stylesheets
+4.2.1   Browser
+4.2.2   Benutzer
+4.2.3   Autor
+4.2.4   !important
+4.3   Konflikte
+4.3.1
+4.3.2
+4.3.3
+4.3.4   Weight / Specificity
+
+5   CSS Optimierung
+5.1   Frames per second
+
+
+
+
+
+
+
+1   HTML & Baumstruktur
+1.1   Beziehungstypen
+1.1.1   Vorfahre (Ancestor)
+1.1.2   Nachkomme (Descendant)
+1.1.3   Elternelement (Parent)
+1.1.4   Kindelement (Child)
+1.1.5   Geschwisterelemente (Siblings)
