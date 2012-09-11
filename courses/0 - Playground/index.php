@@ -35,6 +35,23 @@ $impress = new ImpressJS();
 			</div>
 		</div>
 		<div id="impress">
+			<div id="aaa" class="step slide" <?= $impress ?>>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			</div>
+			<div id="bbb" class="step slide" <?= $impress->moveRight(1000)->rotateY(5) ?>>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			</div>
+			<div id="ccc" class="step slide" <?= $impress->moveRight(1000)->rotateY(5) ?>>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			</div>
+			<div id="ddd" class="step slide" <?= $impress->moveRight(1000)->rotateY(5) ?>>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			</div>
+			<div id="eee" class="step slide" <?= $impress->moveRight(1000)->rotateY(5) ?>>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			</div>
+<?php
+			/*
 			<div id="bored" class="step slide" <?= $impress->shiftX(-1000)->shiftY(-1500) ?>>
 				<q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
 			</div>
@@ -70,6 +87,10 @@ $impress = new ImpressJS();
 				<p>want to know more?</p>
 				<q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
 			</div>
+			<div id="source2" class="step" <?= $impress->moveRight(600) ?>>
+				<p>want to know even more?</p>
+				<q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+			</div>
 			<div id="one-more-thing" class="step" <?= $impress->shiftX(-200)->shiftY(2000)->rotateZ(-20)->setScale(2) ?>>
 				<p>one more thing...</p>
 			</div>
@@ -79,20 +100,12 @@ $impress = new ImpressJS();
 			</div>
 			<div id="overview" class="step" <?= $impress->setPosx(3000)->setPosY(1500)->setPosZ(0)->setScale(10)->resetRotation() ?>>
 			</div>
+			*/
+?>
 		</div>
 		<script src="../assets/js/jquery-1.8.1.js"></script>
 		<script src="../assets/js/bootstrap.js"></script>
 		<script src="../assets/js/impress.js"></script>
 		<script>impress().init();</script>
-<?php
-
-
-$vector = array('x' => 2, 'y' => 3, 'z' => 1);
-
-
-
-#echo sin(deg2rad(360));
-
-?>
 	</body>
 </html>
