@@ -56,29 +56,63 @@ table {
 	Font face declarations
 	---------------------------------------------------------------------------- */
 
+/*
+@font-face {
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Inconsolata'), url(../fonts/Inconsolata.otf);
+}
+*/
+
+@font-face {
+	font-family: 'Ubuntu Mono';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Ubuntu Mono Bold'), local('UbuntuMono-Bold'), url(../fonts/UbuntuMono-Bold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Ubuntu Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(../fonts/UbuntuMono.woff) format('woff');
+}
+@font-face {
+	font-family: 'Ubuntu Mono';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Ubuntu Mono Bold Italic'), local('UbuntuMono-BoldItalic'), url(../fonts/UbuntuMono-Bold-Italic.woff) format('woff');
+}
+@font-face {
+	font-family: 'Ubuntu Mono';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Ubuntu Mono Italic'), local('UbuntuMono-Italic'), url(../fonts/UbuntuMono-Italic.woff) format('woff');
+}
+
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-style: normal;
 	font-weight: 700;
-	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(../shared/fonts/SourceSansPro-Bold.woff) format('woff');
+	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(../fonts/SourceSansPro-Bold.woff) format('woff');
 }
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(../shared/fonts/SourceSansPro.woff) format('woff');
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(../fonts/SourceSansPro.woff) format('woff');
 }
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-style: italic;
 	font-weight: 700;
-	src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(../shared/fonts/SourceSansPro-Bold-Italic.woff) format('woff');
+	src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(../fonts/SourceSansPro-Bold-Italic.woff) format('woff');
 }
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-style: italic;
 	font-weight: 400;
-	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(../shared/fonts/SourceSansPro-Italic.woff) format('woff');
+	src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(../fonts/SourceSansPro-Italic.woff) format('woff');
 }
 
 /* 	----------------------------------------------------------------------------
@@ -119,8 +153,8 @@ i, em {
 	box-sizing:         border-box;
 
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 48px;
-	line-height: 1.5;
+	font-size: 40px;
+	line-height: 1.4;
 }
 
 .impress-enabled .step {
@@ -171,25 +205,50 @@ i, em {
 	background-color: rgba(0,0,0,0.25);
 }
 
+.step h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.25;
+	margin-bottom: 1em;
+}
 
+.step h1 + h2 {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: center;
+	line-height: 1.5;
+	color: #999;
+	margin-top: -2em;
+}
+
+.step ul li {
+	margin-bottom: 0.4em;
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+.step p {
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+.step .sub {
+	font-size: 0.66em;
+}
 
 .slide {
-    display: block;
-
-    width: 900px;
-    height: 700px;
-    padding: 40px 60px;
-
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-
-    color: rgb(102, 102, 102);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -1px;
+	display: block;
+	width: 900px;
+	height: 700px;
+	padding: 40px 60px;
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, .3);
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+	color: rgb(102, 102, 102);
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 }
+
+
+
